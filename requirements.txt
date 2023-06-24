@@ -1,3 +1,4 @@
 shap
 catboost
 matplotlib
+numpy==1.24
