@@ -1,4 +1,4 @@
-shap
+shap==0.41.0
 catboost
 matplotlib
 numpy==1.24
