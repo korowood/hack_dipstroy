@@ -28,6 +28,7 @@ def preproc(df: pd.DataFrame, attr: pd.DataFrame, task_name="TRAIN"):
     # формирование таргета
     df['target'] = (df['ДатаОкончанияЗадачи'] - df['ДатаНачалаЗадачи']).dt.days
     # очистка датафрейма от пустых значений
+
     df = df[~df['target'].isna()]
     df['target'] = df['target'].astype(int)
 
